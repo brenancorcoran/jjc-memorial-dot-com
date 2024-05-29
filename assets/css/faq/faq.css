@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-color: #faf9f6;
+  }
+  
+  /* =====Header CSS===== */
+  nav {
+  }
+  
+  #navbar {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    grid-auto-flow: column;
+    background-color: #fff;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: #b5995a solid 3px;
+    /* -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1); */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    display: grid;
+    width: 105px;
+    margin-left: 25px;
+  }
+  
+  #jjc-strong {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .jjc-strong:hover {
+    color: #000;
+  }
+  
+  .header-text {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    width: fit-content;
+    margin-left: 25px;
+  }
+  
+  .header-text a {
+    color: #32675c;
+    text-decoration: none;
+  }
+  
+  .header-text a:hover {
+    color: #32675c;
+  }
+  
+  #links {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-gap: 0.5em;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #links a {
+    text-decoration: none;
+    color: #32675c;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  #links a:hover {
+    color: #32675c;
+    background-color: white;
+    border: #32675c solid 2px;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  #links #donate {
+    color: #ea3546;
+  }
+  
+  #links #donate:hover {
+    color: white;
+    background-color: #ea3546;
+    border: white solid 2px;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .header-social-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+    margin-right: 15px;
+    gap: 1rem;
+  }
+  
+  .header-fb img {
+    display: flex;
+    width: 50px;
+  }
+  
+  .header-insta img {
+    display: flex;
+    width: 50px;
+  }
+  
+  .logo-2 img {
+    display: grid;
+    width: 105px;
+    place-content: right;
+    cursor: pointer;
+  }
+  
+  .logo-2 {
+    display: grid;
+    place-content: center;
+  }
+  
+  /* ===========================
+            MOBILE MENU
+      =========================
+  */
+  
+  .mobile-btn {
+    display: none;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    background-color: #32675c;
+    overflow-x: hidden;
+    transition: 0.25s;
+    letter-spacing: 2px;
+  }
+  
+  .sidenav a {
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    padding-top: 20px;
+  }
+  
+  .sidenav a:hover {
+    color: #04265b;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .sidenav img {
+    width: 150px;
+    margin-left: -18px;
+    border-bottom: 2px solid white;
+  }
+  
+  .mbl-menu-social-btns {
+    display: inline-flex;
+    margin-top: 20px;
+  }
+  
+  /* ======FAQ======== */
+  
+  .faq-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-bottom: 50px;
+    padding: 10px;
+    padding-top: 135px;
+  }
+  
+  .faq-section h2 {
+    display: grid;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #32675c;
+    margin-bottom: 50px;
+  }
+  
+  .faq-container {
+    display: grid;
+    place-content: left;
+    text-align: left;
+    width: 75%;
+  }
+  
+  .faq-container h3 {
+    display: grid;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #32675c;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #32675c;
+  }
+  
+  .faq-container h4 {
+    display: grid;
+    text-align: left;
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .faq-container p {
+    display: grid;
+    text-align: left;
+    width: 75%;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5em;
+    display: inline !important;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 35px;
+  }
+  
+  .faq-container ul {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 18px;
+    color: #000;
+    margin-left: 20px;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  
+  .faq-container ol {
+    list-style-type: circle;
+    margin-left: 25px;
+    font-style: italic;
+  }
+  
+  .faq-section img {
+    width: 600px;
+    margin-bottom: 25px;
+  }
+  
+  /* ======FOOTER CSS====== */
+  .main-footer {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+  }
+  .main-footer .footer-elements {
+    width: 182px;
+  }
+  .main-footer .footer-img {
+    width: 50px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .main-footer ul li {
+    list-style-type: none;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-left: 35px;
+  }
+  .main-footer a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* ~~~~~=====MEDIA QUERIES ======~~~~~*/
+  
+  /*  =====++ MOBILE ++===== */
+  @media (max-width: 600px) {
+    body {
+    }
+  
+    /* Mobile Header */
+    #navbar {
+      display: grid;
+      place-content: center;
+    }
+  
+    .mobile-btn {
+      display: flex;
+      position: absolute;
+      font-size: 40px;
+      left: 20px;
+      cursor: pointer;
+    }
+  
+    .logo {
+      display: grid;
+    }
+    .logo img {
+      width: 125px;
+      margin-left: 0;
+    }
+  
+    .jjc-strong {
+      display: none;
+    }
+  
+    .header-text {
+      display: none;
+    }
+  
+    #links {
+      display: none;
+    }
+  
+    .header-social-btns {
+      display: none;
+    }
+  
+    .logo-2 img {
+      display: none;
+    }
+  
+    /* ====FAQ SECTION==== */
+  
+    .faq-section h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+  
+    .faq-container {
+      width: 95%;
+    }
+  
+    .faq-container p {
+      width: 95%;
+    }
+  
+    .faq-section img {
+    width: 350px;
+    margin-bottom: 25px;
+  }
+  }
+  
