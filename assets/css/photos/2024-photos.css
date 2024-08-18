@@ -293,21 +293,11 @@
     flex-wrap: wrap;
   }
   
-  .gallery div {
+  .gallery a {
     display: flex;
     flex: 1 0 25%;
-    margin: 2%;
+    margin: 1%;
     overflow: hidden;
-  }
-  
-  .gallery h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
-    margin-right: 15px;
-    margin-left: 15px;
   }
   
   .gallery img {
@@ -316,13 +306,8 @@
     transition: transform 0.2s ease-in-out;
   }
   
-  .gallery div:hover {
+  .gallery a:hover img {
     transform: scale(1.1);
-    border: #32675c 3px solid;
-  }
-
-  .gallery div:hover + .container {
-    margin-bottom: -3px;
   }
   
   /* ======FOOTER CSS====== */
@@ -406,11 +391,6 @@
     .gallery {
       display: grid;
       grid-template-columns: 1fr;
-    }
-    
-    .gallery div {
-        border: #32675c 3px solid;
-        
     }
   
     .modal img {
