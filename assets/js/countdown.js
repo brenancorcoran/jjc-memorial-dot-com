@@ -1,5 +1,5 @@
 // Set the date we're counting down to EST TimeZone
-var countDownDate = new Date('Aug 1, 2025 13:00:00 GMT-05:00').getTime();
+var countDownDate = new Date('Aug 7, 2026 13:00:00 GMT-05:00').getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
