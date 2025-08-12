@@ -22,6 +22,6 @@ var x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById('demo').innerHTML = 'JJC 2025 IS HERE!!';
+    document.getElementById('demo').innerHTML = 'JJC 2026 IS HERE!!';
   }
 }, 1000);
