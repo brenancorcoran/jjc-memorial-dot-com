@@ -221,10 +221,13 @@ img {
 }
 
 .gallery {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  overflow: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery > div:nth-child(4) {
+  grid-column: 1 / 2;
 }
 
 .gallery a {
@@ -290,15 +293,22 @@ h1 {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1rem; /* spacing between items */
 }
 
 .gallery div {
-  display: flex;
-  flex: 1 0 25%;
-  margin: 2%;
   overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  border: 3px solid transparent; /* always reserve border space */
+}
+
+.gallery a {
+  display: flex; /* put text + image in a row */
+  align-items: center; /* vertically center them */
+  text-decoration: none; /* remove link underline */
+  gap: 1rem; /* spacing between text and image */
 }
 
 .gallery h2 {
